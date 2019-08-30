@@ -1,0 +1,41 @@
+KB3D++
+------
+
+Release: KB3D++-3.a (03/28/08)
+Contact: Cesar Munoz (http://research.nianet.org/~munoz)
+National Institute of Aerospace
+http://research.nianet.org/fm-at-nia/KB3D
+
+KB3D++ is an implementation of KB3D in C++. KB3D is a set of algorithms 
+for conflict detection and resolution in a three dimensional geometry. 
+The algorithms have been formally verified in the Prototype Verification
+System (PVS). 
+
+DISCLAIMER
+----------
+PVS assumes perfect real number arithmetic. This C++ prototype uses instead
+floating point arithmetic. Discrepancies between PVS theoretical results
+and C++ implementation results should be expected.
+
+INSTRUCTIONS
+------------
+1. Gunzip and untar the file KB3D++-2.b.tgz. Alternatively, you may 
+   unzip KB3D++-2.b.zip.
+
+2. In a directory  KB3D++-2.b, you will find the following files:
+
+README		This file
+Makefile    Make file
+util	  	Utility and unit conversion functions
+Geodesic 	Functions for transforming geodesic to rectangular coordinates
+CD3D	  	Conflict detection algorithm  
+KB3D	  	Conflict resolution algorithm 
+LoS         Loss of separation recovery algorithm 
+CDR		    User-friendly interface to CD3D/KB3D 
+main		Example of usage of CDR
+
+3. Compile everything:
+$ make kb3d 
+
+4. Run a simple example:
+$ ./kb3d
