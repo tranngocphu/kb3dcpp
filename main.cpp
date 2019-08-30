@@ -30,9 +30,9 @@ int main(int argc, char* argv[]) {
   CDR* cdr = 
     new CDR(D,H,T,
 	    // ownship : lon [deg] lat[deg] alt[feet] trk[deg] gs[knots] vs [ft/min]
-	    10, -0.383, 11500,  96, 253, -500,
+	                     10,    -0.383,    11500,   96,      253,      -500,
 	    // traffic: lon [deg] lat[deg] alt[feet] trk[deg] gs[knots] vs [ft/min]
-	    10, 0,      10000, 287, 316, 200);
+	                     10,      0,       10000,  287,     316,       200);
   cout << "Distance: " 
        << cdr -> distance << " [nm]\n"
        << "Course: " 
@@ -47,7 +47,7 @@ int main(int argc, char* argv[]) {
     }
     else {  
         cout << "Time to loss of separation: " << cdr->time2los << " [sec]\n";
-	cout << "Time to loss of horizontal separation: " 
+	cout << "Time to loss of horizontal separation: "
 	     << cdr->time2lhs << " [sec]\n";
 	cout << "Time to loss of vertical separation: " 
 	     << cdr->time2lvs << " [sec]\n";
