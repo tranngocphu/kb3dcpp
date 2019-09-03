@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build hello world",
+            "type": "shell",
+            "command": "g++",
+            // "args": [
+            //     "-g",
+            //     "-o",
+            //     "main",
+            //     "main.cpp"
+            // ],
+            "args": ["CD3D.cpp", "CDR.cpp", "Geodesic.cpp", "KB3D.cpp", "LoS.cpp", "Util.cpp", "main.cpp", "-o", "main"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
